@@ -1,0 +1,68 @@
+site_name: Machine Learning
+site_description: Documentation for ML
+site_url: https://bishowlovesml.github.io/
+theme:
+  name: material
+  logo: assets/logo/ml.jpg
+  favicon: assets/logo/favicon.ico
+  icon:
+    annotation: material/arrow-right-circle
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.tabs.sticky
+    - navigation.tabs
+    - header.autohide
+    - navigation.footer
+    - content.code.copy
+    - content.code.select
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - blog
+  - search
+  - glightbox
+markdown_extensions:
+  - attr_list
+  - admonition
+  - def_list
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.arithmatex
+nav:
+  #   - index.md
+  - Blog:
+      - blog/index.md
+
+copyright: Copyright &copy; 2025 - 2026

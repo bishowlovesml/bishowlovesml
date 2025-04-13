@@ -1,0 +1,3 @@
+[submodule "bishowlovesml.github.io"]
+	path = bishowlovesml.github.io
+	url = git@github.com:bishowlovesml/bishowlovesml.github.io.git
