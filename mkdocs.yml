@@ -33,6 +33,8 @@ plugins:
   - blog
   - search
   - glightbox
+  - offline:
+      enabled: !ENV [OFFLINE, false]
 markdown_extensions:
   - attr_list
   - admonition

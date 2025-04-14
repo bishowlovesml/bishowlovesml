@@ -209,3 +209,28 @@ Absolutely, "**learning by doing**" is the best way to truly understand machine 
 - Voice Command Mobile App (uses ML to understand spoken commands)
 - Text Sentiment Analyzer (web app that tells if a sentence is happy/sad)
 - Face Detection Desktop Tool
+
+---
+
+???+ example "Mkdocs serve in network"
+
+    1.  **Use the `--dev-addr` Option**:
+
+        ```bash title="bash"
+        mkdocs serve --dev-addr=0.0.0.0:8000
+        ```
+
+    2.  **Find Your IP Address**:
+
+        ```bash title="Linux"
+        ifconfig
+        #or
+        ip addr
+
+        # easier
+        hostname -I
+        ```
+
+    3.  **Access Documentation**:
+
+        Once you have your IP address, you can access your documentation from any device on the same network by visiting `http://your_ip_address:8000` in a web browser.
